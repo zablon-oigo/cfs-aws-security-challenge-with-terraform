@@ -77,3 +77,14 @@ resource "aws_route_table_association" "Test_VPC_rtb_assoc2" {
   subnet_id      = aws_subnet.Public_Subnet_B.id
   route_table_id = aws_route_table.Test_VPC_rtb.id
 }
+resource "aws_eip" "NAT_Gateway_EIP" {}
+
+resource "aws_nat_gateway" "Test_NAT" {
+  depends_on    = [aws_eip.NAT_Gateway_EIP]
+  allocation_id = aws_eip.NAT_Gateway_EIP.id
+  subnet_id     = aws_subnet.Public_Subnet_A.id
+
+  tags = {
+    Name = "NAT Gateway"
+  }
+}
