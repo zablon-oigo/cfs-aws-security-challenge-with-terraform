@@ -1,3 +1,11 @@
+terraform {
+  cloud {
+    organization = "cloudchallenge"
+    workspaces {
+      name = "cfs-aws-security-challenge-with-terrafrom"
+    }
+  }
+}
 provider "aws" {
     region = "${var.region}"
     access_key = "${var.access_key}"
