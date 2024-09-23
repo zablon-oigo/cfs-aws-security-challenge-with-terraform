@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main 
+    paths:
+      - main.tf
 jobs:
   terraform:
     runs-on: ubuntu-latest
