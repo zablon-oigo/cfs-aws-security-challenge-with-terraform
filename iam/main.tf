@@ -22,7 +22,7 @@ resource "aws_iam_role_policy" "vpc_flow_log_policy" {
       {
         Effect = "Allow"
         Action = "s3:PutObject"
-        Resource = "${var.bucket_name.arn}/*"
+        Resource = "arn:aws:s3:::${var.bucket_name}/*"
       }
     ]
   })

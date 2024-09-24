@@ -20,11 +20,9 @@ jobs:
           
       - name: Terraform Init,Plan and Apply
         run: |
-            terraform refresh
             terraform init
             terraform plan
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
           TF_TOKEN_app_terraform_io: ${{ secrets.TERRAFORM_TOKEN }}

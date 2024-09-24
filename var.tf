@@ -9,6 +9,3 @@ variable "secret_key" {
     description = "Secret key"
   
 }
-variable "token" {
-    description = "token"
-}
