@@ -38,3 +38,13 @@ module "cloudFront" {
 module "s3" {
   source="./s3"
 }
+module "iam" {
+  source = "./iam"
+  bucket_name = module.s3.s3_bucket_name
+}
+module "logs" {
+  source = "./logs"
+  bucket_name = module.s3.s3_bucket_name
+  vpc_id = module.test-vpc.vpc_id
+  iam_role = module.iam.aws_iam_role
+}
