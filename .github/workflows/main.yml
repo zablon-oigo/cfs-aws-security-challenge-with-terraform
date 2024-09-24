@@ -20,6 +20,7 @@ jobs:
           
       - name: Terraform Init,Plan and Apply
         run: |
+            terraform refresh
             terraform init
             terraform plan
         env:
