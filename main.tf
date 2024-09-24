@@ -34,3 +34,7 @@ module "cloudFront" {
     load_balancer_dns = module.alb.load_balancer_dns
     
 }
+
+module "s3" {
+  source="./s3"
+}
