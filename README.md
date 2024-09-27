@@ -2,7 +2,8 @@
 
 #### Architecture Diagram
 
-![demo](https://github.com/user-attachments/assets/9145650c-0698-4a7e-b336-f83662154d3f)
+![demo(1)](https://github.com/user-attachments/assets/55bc0eb1-2bdc-4b6a-a33e-4b2bd1fc5d16)
+
 
 
 #### Description
