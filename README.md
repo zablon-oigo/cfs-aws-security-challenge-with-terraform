@@ -38,7 +38,9 @@ Apply the Configuration
 ```bash
   terraform apply
 ```
+#### Blog
+For more information, check out my [blog](https://medium.com/@zablon-oigo/enhancing-aws-security-a-guide-to-securing-your-infrastructure-with-terraform-7f3e230a524a)
 #### Feedback
 If you have any feedback, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/zablon-oigo/).
 #### Acknowledgements
-I would like to extend my sincere gratitude to **CloudForceSky community** for their invaluable support, **Macrine** for the Docker images, and to **Kevin Tuei** for presenting this challenge, which provided a valuable opportunity for growth and learning.
+I would like to extend my sincere gratitude to **CloudForceSky community** for their invaluable support, **Marcrine** for the Docker images, and to **Kevin Tuei** for presenting this challenge, which provided a valuable opportunity for growth and learning.
