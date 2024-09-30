@@ -4,4 +4,5 @@ resource "aws_flow_log" "vpc_flow_log" {
   log_destination_type = "s3"
   log_destination = "arn:aws:s3:::${var.bucket_name}"
   iam_role_arn = var.iam_role
+  max_aggregation_interval = 10
 }
